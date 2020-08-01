@@ -1,25 +1,12 @@
 /*wallpaper*/
-/*
-body{
-    
-    margin: 0;
-    padding: 0;
-    background: url("./images/wallpaper.jpg");
-    background-size: cover;
-    background-position: center;
-}*/
-body{
-    margin: 0;
-    padding: 0;
-    background: url("./images/wallpaper.jpg");
-    background-size: cover;
-    background-position: 0px 723px;
-    min-height:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    /*mirar esta parte*/
 
+body{
+    margin: 0;
+    padding: 0;
+    background: url("./images/wa.jpg");
+    background-size: cover;
+    background-position: -100px 703px;
+    height: 958px;
 }
 
 .position > * {
@@ -34,14 +21,9 @@ ul{
     margin: 0px;
     padding: 0px;
     background: #8b8b8b; 
-    
-
-background: -moz-linear-gradient(top,  #8b8b8b 0%, #6a6a6a 50%, #6a6a6a 50%, #5e5e5e 51%, #717171 100%); 
-background: -webkit-linear-gradient(top,  #8b8b8b 0%,#6a6a6a 50%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); 
-background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#6a6a6a 50%,#5e5e5e 51%,#717171 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b8b8b', endColorstr='#717171',GradientType=0 ); 
-border-bottom: 1px solid #555555;
-overflow: hidden; /*?*/
+    background: linear-gradient(to bottom,  #8b8b8b 0%,#6a6a6a 50%,#6a6a6a 50%,#5e5e5e 50%,#717171 100%); 
+    border-bottom: 1px solid #555555;
+    overflow: hidden;
     border-radius: 4px;
     border-bottom: 1px solid #555555;
     display: grid;
@@ -49,6 +31,10 @@ overflow: hidden; /*?*/
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
 }
 
+.menu{
+    position: relative;
+    bottom: 11px;
+}
 header{
     width: 100%;
 }
@@ -58,25 +44,26 @@ nav{
     padding-top: 100px;
     padding-left: 25px ;
     padding-right: 25px;
-    /*overflow: hidden;*/
     margin: 20px auto;
 }
 
 li{ 
     float: left;
+    border-right:1px solid #5c5c5c; 
+    border-left: 1px solid rgba(255, 255, 255,.2);
+    display: grid;
+    align-items: center;
 }
 
-li a{/* cambios texto y bloques*/
+li a{
     
     display: block;
     color: rgb(241, 240, 240);
     text-align: center;
-    padding: 10px 16px 10px 16px;
     text-decoration: none;
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 16px;
-    border-right:1px solid rgb(59, 57, 57); /*cambiar color de linea divisoria?*/
-    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0,.5);  
 }
 
 li a:hover{
@@ -87,7 +74,8 @@ li a:hover{
     padding: 7px 10px;
     box-shadow: border-box;
     position: relative;
-
+    display: grid;
+    align-items: center;
 }
 
 .search input {
@@ -100,11 +88,8 @@ li a:hover{
     height: 25px;
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0,.7);
     cursor: text;
-background: #7e7e7e; 
-background: -moz-linear-gradient(top,  #7e7e7e 0%, #797979 50%, #6a6a6a 50%, #6e6e6e 51%, #767676 100%); 
-background: -webkit-linear-gradient(top,  #7e7e7e 0%,#797979 50%,#6a6a6a 50%,#6e6e6e 51%,#767676 100%); 
-background: linear-gradient(to bottom,  #7e7e7e 0%,#797979 50%,#6a6a6a 50%,#6e6e6e 51%,#767676 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#767676',GradientType=0 ); 
+    background: #7e7e7e; 
+    background: linear-gradient(to bottom,  #7e7e7e 0%,#797979 50%,#6a6a6a 50%,#6e6e6e 51%,#767676 100%); 
 }
 
 .mglass{
@@ -120,13 +105,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
 
 .apple{
     height: 20px;
+    position: relative;
 }
 
 /*text*/
 
+.position{
+    position: relative;
+    bottom: 50px;
+    
+}
+
 .title{
     text-align: center;
-    font-size: 85px;
+    font-size: 87px;
     color: white;
     cursor: pointer;
     margin-top: 100px;
@@ -156,11 +148,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
     fill: white;
     margin-top: 7px;
     margin-left: 9px;
+    cursor: pointer;
 }
 
 .verse{
     text-align: center;
-    font-size: 32px;
+    font-size: 30px;;
     color: white;
     cursor: pointer;
     font-family: 'Assistant', sans-serif;
@@ -176,6 +169,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
     border-style: none;
     border-color: white;
     cursor: pointer;
+    position: relative;
+    bottom: 30px;
 }
 
 .four > * {
@@ -214,6 +209,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
     padding-bottom: 26px;
     padding-top: 25px;
     padding-left: 25px;
+    position: relative;
+    bottom: 30px;
 }
 
 .pack2{
@@ -257,7 +254,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', end
     height: 18px;
     width: 18px;
     padding-left: 5px;
-    margin-right: 8px;
-    
+    margin-right: 8px;  
 }
  

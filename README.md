@@ -1,5 +1,5 @@
 # apple-clone
-This is a clone of the Apple page: ![link to original](http://archive.fo/UW4oR)
+This is a clone of the Apple page: [link to original](http://archive.fo/UW4oR)
 
 ## Screenshot
 

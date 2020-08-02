@@ -216,7 +216,7 @@ li a:hover{
 .pack2{
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(15, auto);
 }
 
 .shop, .my, .find, .copyright{
